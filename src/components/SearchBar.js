@@ -4,7 +4,7 @@ class SearchBar extends Component {
   state = { term: "term" };
 
   onInputChange = (event) => {
-    let term = event.target.value.toUpperCase();
+    let term = event.target.value;
     this.setState({ term });
   };
 
