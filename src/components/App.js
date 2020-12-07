@@ -4,10 +4,10 @@ import SearchBar from "./SearchBar";
 import ImageList from "./ImageList";
 
 class App extends React.Component {
-  state = { images: [], error: null };
+  state = { images: [], error: null, defaultTerm: "Miami" };
 
   componentDidMount(){
-    this.onSearchSubmit("Los Angeles");
+    this.onSearchSubmit(this.state.defaultTerm);
   }
 
   onSearchSubmit = async (term) => {
